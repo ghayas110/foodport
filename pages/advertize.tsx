@@ -61,7 +61,7 @@ function advertize() {
                                         <PhoneOutlined style={{color:"red"}} />       +1 530 635 5554
                                         </span>
                                   </div>
-                                  { showModal && <div   onClose={()=>setShowModal(true)}   className={style.modal} >
+                                  { showModal && <div   onClick={()=>setShowModal(true)}   className={style.modal} >
                     <div className={style.heading}>
                     </div>
 
@@ -112,7 +112,7 @@ function advertize() {
                                         <PhoneOutlined style={{color:"red"}} />       +1 530 635 5554
                                         </span>
                                   </div>
-                                  { showModal1 && <div   onClose={()=>setShowModal1(true)}   className={style.modal} >
+                                  { showModal1 && <div   onClick={()=>setShowModal1(true)}   className={style.modal} >
                     <div className={style.heading}>
                   
                     </div>
@@ -162,7 +162,7 @@ function advertize() {
                                         <PhoneOutlined style={{color:"red"}} />       +1 530 635 5554
                                         </span>
                                   </div>
-                                  { showModal2 && <div   onClose={()=>setShowModal2(true)}   className={style.modal} >
+                                  { showModal2 && <div   onClick={()=>setShowModal2(true)}   className={style.modal} >
                     <div className={style.heading}>
                     </div>
 
