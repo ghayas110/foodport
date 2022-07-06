@@ -49,6 +49,11 @@
     padding: 3px 10px;
     border-radius: 6px;
     transition: all .5s ease-out;
+    padding: 0px 29px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 600;
 }
 .content_text_box h5.content .btn_see_more:hover{
     background: red;

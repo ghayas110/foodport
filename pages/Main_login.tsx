@@ -40,7 +40,7 @@ function Main_login() {
 
               <div className="co-lg-3"></div>
 
-              <div className='col-lg-3 m-auto'>
+              <div className='col-lg-3  m-auto'>
                 <div className={m_style.left_img_box}>
                   <img src="/img/main_login_img.jpg" alt="" />
                 </div>

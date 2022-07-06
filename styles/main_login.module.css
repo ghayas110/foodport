@@ -20,18 +20,19 @@
     margin: auto;
 }
 .main_btn_box button{
-    background: red;
-    border: none;
-    outline: none !important;
-    padding: 20px 35px;
-    margin: 10px auto;
-    display: block;
-    color: white;
-    font-size: 15px;
+    width: 100%;
+    height: 48px;
+    text-transform: capitalize;
     letter-spacing: 1px;
-    font-weight: 500;
-    border-radius: 4px;
+    font-size: 13px;
+    outline: none;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    margin-bottom: 10px;
 }
+
 .main_btn_box .user_login{
     margin-top: 85px;
 }

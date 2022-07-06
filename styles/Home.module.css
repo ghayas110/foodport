@@ -25,7 +25,7 @@
 } 
 .searches{
   position: absolute;
-  top: 66%;
+  top: 65.5%;
   right: 6px ;
 }
 .searches i{
@@ -118,6 +118,7 @@ input.location-search-input::placeholder {
   border-radius: 0 6px 6px 0;
   background-color: red;
   color: white;
+  font-weight: 600;
 }
 .search_input button > .fa-search{
    
@@ -272,15 +273,19 @@ input.location-search-input::placeholder {
   
 }
 #Showmorebtn button{
-  background: red;
-  color: white;
-  width: 115px;
-  height: 35px;
-  font-weight: 700;
-  margin-bottom: 3px;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+
+    width: 115px;
+    height: 35px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: black;
+    outline: none;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    margin-bottom: 10px;
 }
 #Showmorebtn button:active{
   border: none;

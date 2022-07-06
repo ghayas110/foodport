@@ -248,16 +248,15 @@
  outline-style: none;
 }
 .resSearchBarbtn{
-  border: hidden;
+  display: inline-flex;
+  padding: 8px 43px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: red;
   color: white;
-  border-radius: 4px;
-  height: 37px;
-  width: 157px;
-  background: red;
-  position: relative;
-  right: 5px;
-  border-radius: 0px 8px 8px 0px;
+  font-weight: 600;
 }
+
 .seacrh_parent{
   width: 68%;
   margin: 10px auto 0 auto;

@@ -1,9 +1,23 @@
-
+import React,{useState} from 'react';
 import Head from 'next/head'
 import Footer from './Footer';
 import Header from './Header';
-import resstyle from '../styles/resbox.module.css';
+import  style from '../styles/Advertise.module.css';
+import { PhoneOutlined, MailOutlined ,CustomerServiceFilled, IdcardFilled } from '@ant-design/icons';
+
 function advertize() {
+  
+    const [showModal, setShowModal] = useState(false);
+    const [showModal1, setShowModal1] = useState(false);
+    const [showModal2, setShowModal2] = useState(false);
+  
+
+
+
+	
+	  
+
+
     return (
         <>
 
@@ -20,34 +34,166 @@ function advertize() {
                     <div className='banner-text'>
                         <h3 className='banner-text'>Advertise | FOODPORT </h3>
                     </div>
-                    
-
-
                 </div>
-                <div className='container'>
-                    <br />
-                    <br />
-                    <h4><b>Get To Know foodport</b></h4>
-                    <h6>Order food and grocery online with the foodport app</h6>
-                    <p>Even when on the move, the free foodport mobile application for iOS, Android and Windows Phone, allows you to order food and groceries online anytime from anywhere. Whichever food you currently desire, we have the largest selection of restaurants for you to choose from, right here on foodport!	 <br />
-                    <br /> In three words, the process of ordering food & grocery online is simple, fast, and convenient. </p>
-                    <br />
-                    <h4> <b>How to Order</b></h4>
-                    <p>To order food delivery in Pakistan, follow these simple steps:</p>
-                    <ol>
-                        
-                        <li>Find a restaurant. Enter your delivery address in the location form to see all the places that deliver to your location. It can be your home, office, a hotel or even parks!</li> <br />
-                        <li>Choose your dishes. Browse the menu of the chosen restaurant, select your dishes and add them to your basket. When you are done, press the "Review Payment & Address" button.</li> <br />
-                        <li>Checkout & Payment. Check your order, payment method selection and exact delivery address. Simply follow the checkout instructions from there.</li> <br />
-                        <li>Delivery. We will send you an email and SMS confirming your order and delivery time. Sit back, relax and wait for piping hot food to be conveniently delivered to you!.</li> <br />
-                    </ol>
-                    <p>How to Contact foodport</p>
-                    <br />
-                    <p>If you wish to contact us regarding any questions or comments you may have, please send an email to support@foodport.pk or connect with us via our inbuilt help center.</p>
-
+  
+ {/*Advertising  packages*/} 
+                    <div className="container">
+                          <div className="row" id={style.body}>
+                              <div className="col-lg-4 col-md-12 ">
+                                <div className={style.package1}>
+                                  <div className={style.headp}>
+                                    <span><img src="img/icon-07.png" alt="" height="60px" /></span> &nbsp;&nbsp;
+                                    &nbsp; &nbsp;    <span className={style.headcont}> <span className={style.H17}>$  <b>17</b> </span>  <br/>Basic<br />Package</span>
+                                  </div>
+                                  <button className={style.packbutton} onClick={() => setShowModal(true)} >Order Now!</button>
+                                  <ul className={style.packul}>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                  </ul>
+                                  <div className={style.packfooter}>
+                                        <span>
+                                        <CustomerServiceFilled style={{color:"red"}}/>   Speak With Us 
+                                        </span>
+                                        <span>
+                                        <PhoneOutlined style={{color:"red"}} />       +1 530 635 5554
+                                        </span>
+                                  </div>
+                                  { showModal && <div   onClose={()=>setShowModal(true)}   className={style.modal} >
+                    <div className={style.heading}>
                     </div>
 
+                      <div className={style.formpopup}>
+                        <div className="form-group" id={style.formgroup} >
+                        <label><IdcardFilled className={style.anticon} />  &nbsp;&nbsp; Name</label><br />
+                          <input  type="text" name='name'/><br />
+                          <label> <PhoneOutlined className={style.anticon}/> &nbsp;&nbsp; Phone</label> <br />
+                          <input type="text" name='number' /><br />
+                          <label >  < MailOutlined className={style.anticon}/> &nbsp;&nbsp; Email</label><br />
+                          <input type="text" placeholder="&nbsp; name@example.com" name='email' />
+                         
+                        </div>
+                      </div>
+                    <div className={style.buttondiv}>
+                      <button onClick={() => setShowModal(false)} className={style.buttonclose} >
+                        Close
+                      </button>
+                      <button onClick={() => setShowModal(false)}  className={style.buttonclose} >
+                        Submit
+                      </button>
+                    </div>
+                  </div> }
 
+                                </div>
+                               
+    
+                              </div>
+                              <div className="col-lg-4 col-md-12 ">
+                                <div className={style.package1}>
+                                  <div className={style.headp}>
+                                    <span><img src="img/icon-07.png" alt="" height="60px" /></span> &nbsp;&nbsp;
+                                    &nbsp; &nbsp;    <span className={style.headcont}> <span className={style.H17}>$  <b>30</b> </span>  <br/>Standard<br />Package</span>
+                                  </div>
+                                  <button className={style.packbutton} onClick={() => setShowModal1(true)} >Order Now!</button>
+                                  <ul className={style.packul}>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                  </ul>
+                                  <div className={style.packfooter}>
+                                        <span>
+                                        <CustomerServiceFilled style={{color:"red"}}/>   Speak With Us 
+                                        </span>
+                                        <span>
+                                        <PhoneOutlined style={{color:"red"}} />       +1 530 635 5554
+                                        </span>
+                                  </div>
+                                  { showModal1 && <div   onClose={()=>setShowModal1(true)}   className={style.modal} >
+                    <div className={style.heading}>
+                  
+                    </div>
+
+                      <div className={style.formpopup}>
+                        <div className="form-group" id={style.formgroup} >
+                        <label><IdcardFilled className={style.anticon} />  &nbsp;&nbsp; Name</label><br />
+                          <input  type="text" name='name'/><br />
+                    <label><PhoneOutlined className={style.anticon}/> &nbsp;&nbsp;   Phone</label> <br />
+                          <input type="text" name='number' /><br />
+                    <label>< MailOutlined className={style.anticon}/> &nbsp;&nbsp;  Email</label><br />
+                          <input type="text" placeholder="&nbsp; name@example.com" name='email' />
+                        </div>
+                      </div>
+                    <div className={style.buttondiv}>
+                      <button onClick={() => setShowModal1(false)} className={style.buttonclose} >
+                        Close
+                      </button>
+                      <button onClick={() => setShowModal1(false)}  className={style.buttonclose} >
+                        Submit
+                      </button>
+                    </div>
+                  </div> }
+
+                                </div>
+                               
+    
+                              </div><div className="col-lg-4 col-md-12 ">
+                                <div className={style.package1}>
+                                  <div className={style.headp}>
+                                    <span><img src="img/icon-07.png" alt="" height="60px" /></span> &nbsp;&nbsp;
+                                    &nbsp; &nbsp;    <span className={style.headcont}> <span className={style.H17}>$  <b>50</b> </span>  <br/>Premium<br />Package</span>
+                                  </div>
+                                  <button className={style.packbutton} onClick={() => setShowModal2(true)} >Order Now!</button>
+                                  <ul className={style.packul}>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                  </ul>
+                                  <div className={style.packfooter}>
+                                        <span>
+                                        <CustomerServiceFilled style={{color:"red"}}/>   Speak With Us 
+                                        </span>
+                                        <span>
+                                        <PhoneOutlined style={{color:"red"}} />       +1 530 635 5554
+                                        </span>
+                                  </div>
+                                  { showModal2 && <div   onClose={()=>setShowModal2(true)}   className={style.modal} >
+                    <div className={style.heading}>
+                    </div>
+
+                      <div className={style.formpopup}>
+                        <div className="form-group" id={style.formgroup} >
+                          <label><IdcardFilled className={style.anticon} />  &nbsp;&nbsp; Name</label><br />
+                          <input  type="text" name='name'/><br />
+                    <label> <PhoneOutlined  rotate={90} className={style.anticon}/> &nbsp;&nbsp; Phone </label> <br />
+                          <input type="text" name='number' /><br />
+                    <label>< MailOutlined className={style.anticon}/> &nbsp;&nbsp;  Email </label><br />
+                          <input type="text" placeholder=" &nbsp; name@example.com" name='email' />
+                        </div>
+                      </div>
+                    <div className={style.buttondiv}>
+                      <button onClick={() => setShowModal2(false)} className={style.buttonclose} >
+                        Close
+                      </button>
+                      <button onClick={() => setShowModal2(false)}  className={style.buttonclose} >
+                        Submit
+                      </button>
+                    </div>
+                  </div> }
+
+                                </div>
+                               
+    
+                              </div>
+                          
+                          </div>
+                    </div>
+                        
             
 
             

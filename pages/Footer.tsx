@@ -33,7 +33,7 @@ function Footer(props) {
             </ul>
             </div>
             <div className="ft-main-item social">
-             <img src="/img/food_port_logo_WHITE-01.png" height={60} alt="" />
+              
              <br />
                 <li><a><i className="fab fa-twitter"></i></a></li>
                 <li><a><i className="fab fa-facebook"></i></a></li>

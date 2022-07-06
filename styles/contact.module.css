@@ -44,14 +44,16 @@
     text-transform: uppercase;
 }
 .contact_form input[type="submit"] {
-    background: red;
+    height: 53px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 23px;
     color: white;
-    font-weight: 600;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    margin-top: 1.3em;
-    width: 50%;
-    letter-spacing: 2px;
+    outline: none;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background-color: red;
+    margin-bottom: 10px;
 }
 form.contact_form{
     background-color: #ffffff;
