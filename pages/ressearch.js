@@ -21,6 +21,7 @@ import PlacesAutocomplete from 'react-places-autocomplete';
 import { db, storage } from '../firebase';
 import axios from 'axios';
 import YelpTabs from '../pages/YelpTabs';
+import Advers from '../public/img/download.43bfb366.png';
 import {
     geocodeByAddress,
     geocodeByPlaceId,
@@ -111,7 +112,7 @@ function ressearch() {
                 <Header />
                 <div className='container-fluid margin_top'>
                     <div className='row mt-5'>
-                        <div className='col-lg-2 col-md-12'>
+                        <div className='col-lg-2 col-md-10'>
                             <form action="">
                                 <div className='filter_box'>
                                     <h3 className='filter_head mb-3'>Filter</h3>
@@ -170,7 +171,7 @@ function ressearch() {
                             </form>
                         </div>
 
-                        <div className='col-lg-9 col-md-12 box_shadow'>
+                        <div className='col-lg-8 col-md-12 box_shadow'>
                             <div className='container-fluid mt-1 '>
                                 <PlacesAutocomplete
                                     value={address}
@@ -237,6 +238,13 @@ function ressearch() {
                                <YelpTabs  address={address}/>
                             </div>
                             <span className='all_demo'>All Results</span>
+                        </div>
+                        <div className='col-lg-2 col-md-12 box_shadow'>
+                        
+                        <Image src="/screencapture-localhost-3000-2022-01-15-00_41_04.png"
+                        width={250}
+                        height={500}
+                        />
                         </div>
                          <div className='col-lg-0 col-md-0'>
                             <div className="res_box_locat_map">
