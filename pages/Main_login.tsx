@@ -32,6 +32,8 @@ function Main_login() {
                   <div className={m_style.main_btn_box}>
                     <Link href="/UserSignin"><button className={m_style.user_login}>Login As User</button></Link>
                    <Link href="/ResownerSignin"><button className={m_style.owner_login}>Login As Restaurant Owner</button></Link>
+                   <Link href="/AdvertSignin"><button className={m_style.owner_login}>Login As Advertizer</button></Link>
+
                   </div>
 
                 </div>
