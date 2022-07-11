@@ -46,14 +46,14 @@ const [visible, setVisible] = useState(false)
  
   const getUser = async () => {
    
-    const querySnapshot = await getDocs(collection(db, "advertize"), where("select", "==", "business"));
+    const querySnapshot = await getDocs(collection(db, "advertize"), );
     querySnapshot.forEach((doc) => {
       // doc.data() is never undefined for query doc snapshots
       console.log(doc.id, " => ", doc.data());
       data.push({ id: doc.id, ...doc.data() })
       // setUserData(userData=>[...userData,doc.data()])
     })
-    const filterData = data
+    const filterData =  data.filter((item)=> item.email===usersName)
     if (filterData) {
       setUserData(filterData)
     }
@@ -165,7 +165,7 @@ const [visible, setVisible] = useState(false)
     useEffect(() => {
       // Perform localStorage action
 
-      const users = localStorage.getItem("displayName");
+      const users = localStorage.getItem("email");
       setUsersName(users ? users : "logged Out");
     }, []);
 
