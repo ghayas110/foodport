@@ -34,7 +34,7 @@ const [visible, setVisible] = useState(false)
   useEffect(() => {
     try {
       
-      getUser();
+      getUser()
       const auth = getAuth();
       const admin=auth.currentUser
       console.log(admin,"admin")
